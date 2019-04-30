@@ -2283,3 +2283,41 @@ hr {
         width: 85%;
     }
 }
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.row-container{
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    /* border: 2vw solid transparent; */
+    margin: 4vh;
+}
+.row-content{
+    position: absolute;
+    align-content: center;
+    /* margin: 0 auto; */
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.row-container:hover .row-content{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.row-container:hover .row-img{
+    opacity: 0.1;
+    transform: scale(0.95);
+}
+
+.row-img{
+    transition: 0.3s ease-in-out;
+}
