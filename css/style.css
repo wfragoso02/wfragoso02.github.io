@@ -2297,13 +2297,11 @@ hr {
     position: relative;
     height: 20vh;
     width: 20vh;
-    /* border: 2vw solid transparent; */
     margin: 4vh;
 }
 .row-content{
     position: absolute;
     align-content: center;
-    /* margin: 0 auto; */
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
