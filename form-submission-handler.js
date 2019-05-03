@@ -73,9 +73,16 @@
       
   
       if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
-        var invalidEmail = form.querySelector(".email-invalid");
+        var invalidEmail = document.querySelector(".email-invalid");
         if (invalidEmail) {
-          invalidEmail.style.display = "block";
+          invalidEmail.style.opacity = "1";
+          invalidEmail.style.height = "15vh";
+          invalidEmail.style.top = "0";
+          setTimeout(function () {
+            invalidEmail.style.opacity = "0";
+            invalidEmail.style.height = "0vh";
+            invalidEmail.style.top = "-30vh";
+          }, 3000);
           return false;
         }
       } else {
@@ -93,9 +100,16 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou_message");
+            var thankYouMessage = document.querySelector(".thankyou_message");
             if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
+              thankYouMessage.style.opacity = "1";
+              thankYouMessage.style.height = "15vh";
+              thankYouMessage.style.top = "0";
+              setTimeout(function () {
+                thankYouMessage.style.opacity = "0";
+                thankYouMessage.style.height = "0vh";
+                thankYouMessage.style.top = "-30vh";
+              }, 3000);
             }
             return;
         };
