@@ -594,6 +594,8 @@ input[type="checkbox"] {
     padding: 20px;
     background: transparent;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .addo-hero .flexslider .slider-text > .slider-text-inner .desc .image_wrap {
@@ -2359,4 +2361,15 @@ hr {
 }
 .wrapper{
     text-align: center;
+}
+.resume{
+    letter-spacing: 0.5vh;
+}
+.fa-github, .fa-link{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    color: black;
+    padding: 2vh;
 }
